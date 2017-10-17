@@ -18,21 +18,6 @@ namespace controldev
         double offset;
     };
 
-    enum ControlMode
-    {
-        ControlOff = 0,
-        Control,
-        KeepAlive
-    };
-
-    struct ButtonMapping
-    {
-        int control_off;
-        int control;
-        int keep_alive;
-
-        ButtonMapping() : control_off(-1), control(-1), keep_alive(-1) {}
-    };
 }
 
 #endif /* CONTROLDEVTYPES_HPP */
