@@ -76,7 +76,7 @@ void GenericRawToMotion2D::updateHook()
     RawCommand rcmd;
     base::commands::Motion2D  mcmd;
     if(_raw_command.read(rcmd) == RTT::NewData){
-        updateControlMode(_botton_mapping.value(), rcmd.buttonValue);
+        updateControlMode(_button_mapping.value(), rcmd.buttonValue);
 
         if(control_mode == controldev::Control)
         {
